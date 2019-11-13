@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdbool.h>
 
-bool isBetween(int number, int low, int high) {
+bool function(int number, int low, int high) {
     if((low < number) && (high > number)){
         return true;
     }else {
@@ -11,7 +11,7 @@ bool isBetween(int number, int low, int high) {
 }
 
 int main(){
-    bool between = isBetween(5, 3, 10);
+    bool between = function(5, 3, 10);
     printf("%s\n", between ? "True" : "False");
     return 0;
 }
