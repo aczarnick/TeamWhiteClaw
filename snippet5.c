@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-void multiply(int, int, int* );
-void divide(int, int, int* );
+void function1(int, int, int* );
+void function2(int, int, int* );
 
 int main(){
     int selection = 1; 
@@ -11,10 +11,10 @@ int main(){
     switch (selection)
     {
     case 1 :
-        multiply(num1, num2, &result);
+        function1(num1, num2, &result);
         break;
     case 2: 
-        divide(num1, num2, &result);
+        function2(num1, num2, &result);
         break;
     default:
         printf("Invalid Selection\n");
@@ -24,11 +24,11 @@ int main(){
     return 0;
 }
 
-void multiply(int x, int y, int* result){
+void function1(int x, int y, int* result){
     *result = x * y;
 }
 
-void divide(int x, int y, int* result){
+void function2(int x, int y, int* result){
     if (y != 0){
         *result = x / y;
     }else {

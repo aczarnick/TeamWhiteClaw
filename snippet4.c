@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int *doSomething(int *list, int size)
+int *function(int *list, int size)
 {
     for (int i = 0, j = size - 1; i < j; i++, j--)
     {
@@ -19,7 +19,7 @@ void print(int *const list, int size)
 int main()
 {
     int list[] = {1, 2, 3, 4, 5, 6};
-    int *p = doSomething(list, 6);
+    int *p = function(list, 6);
     print(p, 6);
     return 0;
 }
